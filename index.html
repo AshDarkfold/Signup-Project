@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="authbox dispflexcenter">
+      <div class="loginbox boxinner">
+        <section class="authboxtitle">
+          L O G I N
+        </section>
+        <form>
+          <input type="text" name="username" placeholder="Username" />
+          <input
+            type="text"
+            name="password"
+            pattern=".{8,12}"
+            required
+            title="8 to 12 characters"
+            placeholder="Password"
+          />
+          <input type="submit" value="L o g i n" />
+          <div class="switch" onclick="showsignup();">New User ? Sign Up</div>
+          <div class="signupbox boxinner" id="signupbox">
+            <section class="authbox title">
+              S I G N U P
+            </section>
+            <form>
+              <input type="email" name="email" placeholder="E-mail" />
+              <input type="text" name="username" placeholder="Username" />
+              <input
+                type="text"
+                name="password"
+                s
+                pattern=".{8,12}"
+                required
+                title="8 to 12 characters"
+                placeholder="Password"
+              />
+              <input type="submit" value="Create Account" />
+            </form>
+            <div class="switch" onclick="showlogin()">Already registered</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
